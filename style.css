@@ -2,51 +2,69 @@
 
 /* ベースのフォントとレイアウト */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7fb;
     margin: 0;
     padding: 0;
     color: #333;
   }
   
+  /* ヘッダーのデザイン */
   header {
     background-color: #0073e6;
     color: white;
-    padding: 20px;
+    padding: 30px;
     text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   
   h1 {
     margin: 0;
-    font-size: 2.5em;
+    font-size: 2.8em;
+    font-weight: bold;
   }
   
-  /* メインコンテンツのスタイル */
+  /* メインコンテンツのデザイン */
   main {
-    padding: 20px;
+    padding: 30px;
     max-width: 1200px;
     margin: 0 auto;
     background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    line-height: 1.6;
   }
   
+  /* セクションごとのスタイル */
   section {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    padding: 20px;
+    background-color: #fafafa;
+    border-left: 5px solid #0073e6;
+    border-radius: 8px;
   }
   
-  h2 {
+  section h2 {
     font-size: 1.8em;
     color: #0073e6;
     margin-bottom: 10px;
+    font-weight: bold;
     border-bottom: 2px solid #0073e6;
     padding-bottom: 5px;
   }
   
+  section h3 {
+    font-size: 1.6em;
+    color: #0073e6;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  /* テキストのスタイル */
   p {
     font-size: 1.1em;
-    line-height: 1.6;
     margin: 10px 0;
+    color: #555;
   }
   
   ul {
@@ -54,51 +72,33 @@ body {
   }
   
   ul li {
-    margin: 5px 0;
+    margin: 8px 0;
+    font-size: 1.1em;
+    color: #555;
   }
   
+  /* フッターのデザイン */
   footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 15px;
     position: fixed;
     bottom: 0;
     width: 100%;
+    font-size: 0.9em;
   }
   
   footer p {
     margin: 0;
-    font-size: 0.9em;
   }
   
-  /* セクションタイトルのスタイル */
-  section {
-    margin-bottom: 20px;
-    padding: 15px;
-    background-color: #f9f9f9;
-    border-left: 5px solid #0073e6;
-    border-radius: 8px;
+  /* リストアイテムの強調 */
+  ul li strong {
+    color: #0073e6;
   }
   
-  section p {
-    font-size: 1.1em;
-  }
-  
-  /* 策定日部分のスタイル */
-  section p:last-of-type {
-    font-weight: bold;
-    text-align: center;
-    color: #555;
-  }
-  
-  /* リストのスタイル */
-  ul {
-    list-style-type: square;
-    color: #555;
-  }
-  
-  /* ボックスシャドウとリンクの色 */
+  /* リンクのスタイル */
   a {
     color: #0073e6;
     text-decoration: none;
@@ -108,21 +108,31 @@ body {
     text-decoration: underline;
   }
   
-  /* 小さい画面でのレスポンシブデザイン */
+  /* 目立たせたいテキスト */
+  strong {
+    color: #0073e6;
+    font-weight: bold;
+  }
+  
+  /* メディアクエリ：モバイルデバイスに対応 */
   @media (max-width: 768px) {
     main {
-      padding: 15px;
+      padding: 20px;
     }
   
     h1 {
-      font-size: 2em;
+      font-size: 2.2em;
     }
   
     h2 {
-      font-size: 1.5em;
+      font-size: 1.6em;
     }
   
-    p {
+    h3 {
+      font-size: 1.4em;
+    }
+  
+    p, ul li {
       font-size: 1em;
     }
   
